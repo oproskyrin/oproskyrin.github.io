@@ -1,0 +1,30 @@
+.header {
+	background: #5d617f;
+	background-image: url(../img/bgn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__title {
+	font-size: 56px;
+	margin-bottom: 30px;
+	font-family: 'Marriweather' , serif;
+	margin-top: -50px;
+		text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
+                 #000 -1px 1px 0, #000 1px -1px 0;
+}
+
+.header__slogan {
+	font-size: 28px;
+	line-height: 42px;
+	text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
+                 #000 -1px 1px 0, #000 1px -1px 0;
+}
