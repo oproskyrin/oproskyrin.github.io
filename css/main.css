@@ -1,30 +1,99 @@
-.header {
-	background: #5d617f;
-	background-image: url(../img/bgn.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
+/*  МЕНЮ ЦВЕТ */
+.bg-dark {
+    background-color: #E50029!important;
+  }
+/* МЕНЮ ЗАГЛАВНЫЕ БУКВЫ */
+.nav-item a {
+		text-transform: uppercase;
+}
+
+/*  КАРТИНКА */
+.backgr {
+	background-image: url(../img/la.jpg);
 	background-size: cover;
-	height: 100vh;
+	background-position:center;
+	background-repeat: no-repeat;
+	height: 70vh;
+	width: 100%;
 	color: #fff;
+	margin: 0;
 	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	padding-top: 200px;
 }
 
-.header__title {
-	font-size: 56px;
-	margin-bottom: 30px;
-	font-family: 'Marriweather' , serif;
-	margin-top: -50px;
-		text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
-                 #000 -1px 1px 0, #000 1px -1px 0;
+/*  КАРТИНКА ЗАГОЛОВОК */
+.backgr h1 {
+	font-size: 60px;
+	font-family: 'IBM Plex Serif', serif;
+
 }
 
-.header__slogan {
-	font-size: 28px;
-	line-height: 42px;
-	text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
-                 #000 -1px 1px 0, #000 1px -1px 0;
+/*  КАРТИНКА ПАРАГРАФ */
+.backgr p {
+	font-size: 25px;
+	text-shadow: 1px 1px #0000;
+	font-family: 'PT Serif Caption', serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*  КНОПКА УСЛУГИ */
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #fff;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+
+  /*  ТЕЛЕФОН */
+
+  .telephone {
+  	height: 100px;
+  	background-color: #E50029;
+  	text-align: center;
+  	padding-top: 10px;
+
+  }
+  .telephone h1 {
+  	color: #ffff;
+  	font-size: 60px;
+  }
+
+  .telephone .fas {
+  	  	color: #ffff;
+  	font-size: 50px;
+  }
+
+  .main {
+  	text-align: center;
+  	margin-top: 35px;
+  }
+
+  .main p {
+  	  	margin-top: 25px;
+  }
+
+/*  ИКОНКИ */
+  .fas {
+  	font-size: 80px;
+  	color: #dc3545
+  }
+
+   .fab {
+  	font-size: 80px;
+  	color: #dc3545
+  }
+
+/*  УСЛУГИ */
+.support {
+text-align: center;
+}
+
+.support h1 {
+	font-size: 20px;
+}
+.bg_sup {
+	background-color: #ECECEC;
+	padding-top: 15px;
 }

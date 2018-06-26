@@ -1,27 +1,136 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <title>Лаборатория</title>
+	<meta charset="utf-8">
+	<title>Сайт</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:700|PT+Serif+Caption" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-  <!--Шапка-->
-  <div class="header">
-    <div class="header__title">Олег Иванов</div>
-    <div class="header__slogan">Верстка сайтов на HTML и CSS <br>HTML5 CSS3 JS</div>
-    <div class="header__arrow"><i class="fas fa-chevron-down"></i></div>
-  </div>
 
-  <!--Портфолио-->
-  <div class="portfolio"></div>
+	<!--НАВИГАЦИЯ-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		<!-- Лого или название -->
+		<a class="navbar-brand" href="#">SLViT</a>
 
-  <!--Футер-->
-  <div class="footer"></div>
+		<!-- гамбургер при маленьком экране -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Навбар -->
+		<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">главная</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">услуги</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">цены</a>
+				</li> 
+				<li class="nav-item">
+					<a class="nav-link" href="#">контакты</a>
+				</li> 
+			</ul>
+		</div> 
+	</nav>
+	<!--НАВИГАЦИЯ-->
+
+	<!--КАРТИНКА Удаленная поддержка-->
+	<div class="backgr">
+		<h1>Удаленная поддержка</h1>
+		<p>настройка Windows, установка Антивируса <br>удаление рекламы и многое другое.</p>
+		<button type="button" class="btn
+		btn-danger">услуги</button>
+	</div>
+
+<div class="telephone">
+<h1><i class="fas fa-phone-volume"></i> 8-800-200-444</h1>
+</div>
+	<!--Про нас-->
+	<div class="container">
+		<div class="row main">
+			<div class="col">
+				<i class="fas fa-users"></i>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="col-md">
+				<i class="fas fa-tachometer-alt"></i>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="col-md">
+				<i class="fas fa-globe"></i>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+
+	<!--Что мы делаем-->
+	<div class="bg_sup">
+		<div class="container">
+			<div class="row support">
+				<div class="col-md-3">
+					<h1><i class="fas fa-envelope"></i><br>Настройка почты </h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="col-md-3">
+					<h1><i class="fab fa-chrome"></i><br>Настройка браузера</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="col-md-3">
+					<h1><i class="fas fa-hospital"></i><br>Проверка на вирусы</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="col-md-3">
+					<h1><i class="fas fa-print"></i><br>Настройка принтеров</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
