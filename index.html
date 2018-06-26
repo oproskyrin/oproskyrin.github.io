@@ -6,12 +6,14 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:700|PT+Serif+Caption" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="http://oproskyrin.github.io/css/main.css">
+	<link rel="stylesheet" type="text/css" href="oproskyrin.github.io/css/main.css">
 </head>
 <body>
+	<!--Кнопка вверх-->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
 
 	<!--НАВИГАЦИЯ-->
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
 		<!-- Лого или название -->
 		<a class="navbar-brand" href="#">SLViT</a>
 
@@ -27,13 +29,13 @@
 					<a class="nav-link" href="#">главная</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">услуги</a>
+					<a class="nav-link" href="#work">услуги</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">цены</a>
 				</li> 
 				<li class="nav-item">
-					<a class="nav-link" href="#">контакты</a>
+					<a class="nav-link" href="#contacts">контакты</a>
 				</li> 
 			</ul>
 		</div> 
@@ -44,13 +46,13 @@
 	<div class="backgr">
 		<h1>Удаленная поддержка</h1>
 		<p>настройка Windows, установка Антивируса <br>удаление рекламы и многое другое.</p>
-		<button type="button" class="btn
-		btn-danger">услуги</button>
+		<a href="#work" class="btn btn-danger" role="button" aria-disabled="true">услуги</a>
+
 	</div>
 
-<div class="telephone">
-<h1><i class="fas fa-phone-volume"></i> 8-800-200-444</h1>
-</div>
+	<div class="telephone">
+		<h1><i class="fas fa-phone-volume"></i>  8-800-200-444</h1>
+	</div>
 	<!--Про нас-->
 	<div class="container">
 		<div class="row main">
@@ -85,7 +87,7 @@
 	</div>
 
 	<!--Что мы делаем-->
-	<div class="bg_sup">
+	<div class="bg_sup" id="work">
 		<div class="container">
 			<div class="row support">
 				<div class="col-md-3">
@@ -127,7 +129,58 @@
 			</div>
 		</div>
 	</div>
+	<!--Отзывы-->
+	<div class="comment">
+		<h1>Отзывы</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="img/user.jpg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/user.jpg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/user.jpg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<!--Подвал-->
+	<div class="footer" id="contacts">
+	Какой то текст
+	</div>
+
+
+	<!--скрипт на кнопку вверх-->
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

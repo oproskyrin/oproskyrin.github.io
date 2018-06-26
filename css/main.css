@@ -1,10 +1,10 @@
 /*  МЕНЮ ЦВЕТ */
 .bg-dark {
-    background-color: #E50029!important;
-  }
+	background-color: #E50029!important;
+}
 /* МЕНЮ ЗАГЛАВНЫЕ БУКВЫ */
 .nav-item a {
-		text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 /*  КАРТИНКА */
@@ -39,55 +39,57 @@
 
 /*  КНОПКА УСЛУГИ */
 .btn-danger {
-    color: #fff;
-    background-color: #dc3545;
-    border-color: #fff;
-    margin-top: 10px;
-    text-transform: uppercase;
-  }
+	color: #fff;
+	background-color: #dc3545;
+	border-color: #fff;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
 
-  /*  ТЕЛЕФОН */
+/*  ТЕЛЕФОН */
 
-  .telephone {
-  	height: 100px;
-  	background-color: #E50029;
-  	text-align: center;
-  	padding-top: 10px;
+.telephone {
+	height: 100px;
+	background-color: #E50029;
+	text-align: center;
+	padding-top: 10px;
 
-  }
-  .telephone h1 {
-  	color: #ffff;
-  	font-size: 60px;
-  }
+}
+.telephone h1 {
+	color: #ffff;
+	font-size: 60px;
+}
 
-  .telephone .fas {
-  	  	color: #ffff;
-  	font-size: 50px;
-  }
+.telephone .fas {
+	color: #ffff;
+	font-size: 50px;
+}
 
-  .main {
-  	text-align: center;
-  	margin-top: 35px;
-  }
+.main {
+	text-align: center;
+	padding-top: 40px;
+}
 
-  .main p {
-  	  	margin-top: 25px;
-  }
+.main p {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
 
 /*  ИКОНКИ */
-  .fas {
-  	font-size: 80px;
-  	color: #dc3545
-  }
+.fas {
+	font-size: 80px;
+	color: #dc3545
+}
 
-   .fab {
-  	font-size: 80px;
-  	color: #dc3545
-  }
+.fab {
+	font-size: 80px;
+	color: #dc3545
+}
 
 /*  УСЛУГИ */
 .support {
-text-align: center;
+	text-align: center;
+	padding-top: 40px;
 }
 
 .support h1 {
@@ -96,4 +98,47 @@ text-align: center;
 .bg_sup {
 	background-color: #ECECEC;
 	padding-top: 15px;
+}
+
+/*  ОТЗЫВЫ */
+.comment {
+	width: 100%;
+	height: 450px;
+	background-color: #fff;
+	text-align: center;
+	padding-top: 40px;
+}
+
+
+/*  ПОДВАЛ */
+.footer {
+	width: 100%;
+	height: 300px;
+	background-color: #111111;
+}
+
+/*  КНОПКА ВВЕРХ */
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: red; /* Set a background color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	border-radius: 10px; /* Rounded corners */
+	height: 40px;
+	width: 40px;
+
+}
+
+#myBtn .fas {
+	font-size: 20px;
+	color: #ffff;
+}
+
+#myBtn:hover {
+	background-color: #555; /* Add a dark-grey background on hover */
 }
